@@ -1,0 +1,248 @@
+/*allPages*/
+header{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    line-height: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    letter-spacing: 0.1em;
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    z-index: 5;
+}
+nav{
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 7.89vh;
+    left: 0vw;
+    z-index: 5;
+}
+footer{
+    position: fixed;
+    bottom: 0vh;
+    left: 0vw;
+    z-index: 5;
+    width: 100vw;
+    font-size: 2.25vh;
+    line-height: 2.9vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    text-shadow: none;
+}
+.tab {
+    overflow: hidden;
+    width: 100%;
+    height:6vh;
+}
+
+
+.tab a {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 1.75vh;
+    padding-bottom: 1.75vh;
+    transition: 0.3s;
+    text-decoration: none;
+    width: 33.33vw;
+    transform: border-bottom 1s;
+}
+
+
+.tabcontent.active{
+    display: block;
+    color: black;
+}
+
+.tabcontent {
+    display: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    top: 8vh;
+    left: 0vw;
+    padding: 1vh 4vw;
+    padding-top: 9vh;
+    height: 76vh;
+    width: 92vw;
+    color: white;
+    transition: color 3s ease-in-out;
+}
+.tabcontent::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+/*startPage*/
+#appBackground{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+.gradientOverlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#appLogo
+{
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    width: 50vw;
+    height: auto;
+    width: 50%;
+}
+
+#appTitleA
+{
+    position: fixed;
+    top: 38.68%;
+    left: 25%;
+    width: 50%;
+    height: 7%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+#appTitleB
+{
+    position: fixed;
+    top: 46.68%;
+    left: 25%;
+    width: 50%;
+    height: 7%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+#startContainer
+{
+    position: fixed;
+    top: 65%;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    margin: none;
+}
+
+#startButton
+{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    padding: 1vh 0px;
+    text-align: center;
+}
+
+/*projectpanelPage*/
+
+.appMenu ul{
+    list-style-type: none;
+
+
+}
+
+/*Untransferred*/
+#controller{
+    display: block;
+    background: white;
+    position: fixed;
+    top:100vh;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+#openControls span{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.controllerTitle{
+    font-weight: bold;
+    font-family: sans-serif ;
+}
+.controllerVersion{
+    font-size: 1.75vh;
+    font-weight: bold;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+.cheader{
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: auto;
+    background: orange;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 2.25vh;
+    line-height: 2.25vh;
+}
+
+.cheader span{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.cbody{
+    position: absolute;
+    top: 6.25vh;
+    width: 100vw;
+    height: 93.75vh;
+    background: white;
+}
+.cicon{
+    margin-left: 30vw;
+    margin-top: 10vh;
+}
+.cicon img{
+    width: 40vw;
+    height: 40vw;
+}
+.cform{
+    width: 60vw;
+    height: 40vh;
+    margin-left: 20vw;
+    margin-top: 5vh;
+}
+.cform input:focus{
+    outline: none;
+}
+.csend{
+    position: absolute;
+    width: 60vw;
+    font-size: 2.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background: red;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    text-shadow: none;
+    color: white !important;
+}

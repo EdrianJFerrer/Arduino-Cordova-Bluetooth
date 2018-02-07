@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'closenessregular';
+    src: url('../res/font/closeness-webfont.woff2') format('woff2'),
+         url('../res/font/closeness-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Theme A - Default*/
+[theme=a] header{
+    font-size: 3vh; /*Maximum of 3.5*/
+    background: orange;
+    color: black;
+    font-family: 'closenessregular';
+}
+
+[theme=a] nav{
+    background: #ffe4b3;
+}
+
+[theme=a] footer{
+    font-size: 2.25vh; /*Max: 2.25vh*/
+    background: orange;
+    font-family: 'Arial';
+}
+
+[theme=a] .tab {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+
+[theme=a] .tab a {
+    background-color: inherit;
+    font-size: 1.7vh;
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+[theme=a] .tab a.active {
+    border-bottom: 4px solid black;
+}
+
+
+[theme=a] .tabcontent {
+    background-color: white;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+[theme=a] #panel {
+    background-color: #F1D2D2;
+}
+
+[theme=a] #appBackground{
+    background: url("../res/screen/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+[theme=a] .gradientOverlay{
+    background: linear-gradient(180deg, rgba(237, 238, 245, 0.1), rgba(153, 153, 204, 0.5), rgba(68, 68, 136, 1));
+    background-size: 600% 600%;
+    animation: gradientMove 30s ease infinite;
+}
+@keyframes gradientMove { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+
+[theme=a] #appTitleA
+{
+    font-family: 'Century Gothic';
+    font-size: 11vw;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+
+
+[theme=a] #appTitleB
+{
+    font-family: 'Century Gothic';
+    font-size: 8vw;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+
+[theme=a] #startButton
+{
+    font-family: 'Century Gothic';
+    font-size: 7vw;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0,0,0,0);
+    border-radius: 30px;
+    background: #C37E00;
+}
+
+
+/*Theme B - Default*/

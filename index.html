@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+	<title>Bluetooth AC</title>
+	<!--Libraries-->
+	<script src="lib/jquery/jquery-1.11.3.min.js"></script>
+	<script src="lib/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="lib/jquerymobile/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="lib/fontawesome/font-awesome.min.css">
+	<!--System-->
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/theme.css">
+	
+</head>
+<body>
+	<div data-role="page" id="startPage" theme="a">
+		<div id="appBackground"></div>
+		<div class="gradientOverlay"></div>
+		<img id="appLogo" src="res/icon/web/appLogo.svg" />
+		<div id="appTitleA">arduino</div>
+		<div id="appTitleB">controller</div>
+		<div id="startContainer">
+			<a href="#projectpanelPage" id="startButton" data-transition="slidefade">START</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="projectpanelPage" theme="a">
+		<header>ARDUINO CONTROLLER</header>
+		<nav class="appMenu tab">
+
+					<a href="#" class="tablinks active" onclick="openTab('homeButton', 'home')" id="homeButton">HOME</a>
+					<a href="#" class="tablinks" onclick="openTab('projectsButton', 'projects')" id="projectsButton">PROJECTS</a>
+					<a href="#" class="tablinks" onclick="openTab('docsButton', 'docs')" id="docsButton">DOCS</a>
+
+		</nav>
+		<!-- Tab content -->
+		<div id ="home" class="tabcontent active">
+  			<h3>What is an Arduino?</h3>
+  			<p>Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing.</p>
+		</div>
+
+		<div id="projects" class="tabcontent">
+		  	<h3>Currently Unavailable</h3>
+		  	<p>Sorry for this inconvenience</p> 
+		  	<p>The version of this app is still on beta. and only used for further testing and development. We promise you to give all of this features after the release of the app</p> 
+		</div>
+		
+		<div id="docs" class="tabcontent">
+		  	<h3>Currently Unavailable</h3>
+		  	<p>Sorry for this inconvenience</p> 
+		  	<p>The version of this app is still on beta. and only used for further testing and development. We promise you to give all of this features after the app has been released</p> 
+		</div>
+		<div id="panel">Hello world!</div>
+		<div id="controller">
+			<div class="cheader">
+				<span id="controllerDown"><i class="fa fa-chevron-down"></i></span>
+				<span class="controllerTitle">Quick Send</span>
+				<span class="controllerVersion">v 1.0.2</span>
+			</div>
+			<div class="cbody">
+				<div class="cicon">
+					<img src="img/icons/quicksend.png" alt="Qick Send Icon">
+				</div>
+				<div class="cform">
+					<input type="text" placeholder="Input data here...">
+					<a href="#" class="csend">SEND</a>
+				</div>
+			</div>
+		</div>
+
+		<footer id="openControls">
+			<span><i class="fa fa-chevron-up"></i></span>
+			<span class="controllerTitle">Quick Send</span>
+			<span class="controllerVersion">v 1.0.2</span>
+		</footer>
+	</div>
+
+
+	<!--Cordova Needed Scripts / System Scripts -->
+	<script src="js/ui.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+</html>
