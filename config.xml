@@ -20,7 +20,4 @@
   <platform name="android">
   <icon src="icon.png" width="180" height="180" />
   </platform>
-
-  <content src="index.html" />
-  <access origin="*" />
 </widget>
